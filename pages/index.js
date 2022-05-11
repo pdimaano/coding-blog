@@ -38,7 +38,7 @@ export default class extends Component {
                   return (
                     <a key={index} href={`/blog/${post.urlTitle}`}>
                       <div className="homepage-latest-blog-post">
-                        <div classname="homepage-latest-thumbnail">
+                        <div className="homepage-latest-thumbnail">
                           <img src={post.thumbnailImageUrl} />
                         </div>
                         <div className="homepage-latest-blog-post-title">
