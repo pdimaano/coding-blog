@@ -4,7 +4,7 @@ import Header from "../../../components/header.js"
 import Footer from "../../../components/footer.js"
 import HeadMetadata from "../../../components/headMetadata.js"
 import getBlogPostsByTag from "../../../api/getBlogPostsByTag.js"
-import GoogleAnalytics from "../components/googleAnalytics.js"
+import GoogleAnalytics from "../../../components/googleAnalytics.js"
 
 export default class extends Component {
   static async getInitialProps ({ query }) {
