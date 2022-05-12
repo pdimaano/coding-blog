@@ -7,6 +7,7 @@ import Header from "../../components/header.js"
 import Footer from "../../components/footer.js"
 import HeadMetadata from "../../components/headMetadata.js"
 import getBlogPostByUrlTitle from "../../api/getBlogPostByUrlTitle.js"
+import GoogleAnalytics from "../components/googleAnalytics.js"
 
 export default class extends Component {
   static async getInitialProps ({ query }) {
@@ -30,6 +31,7 @@ export default class extends Component {
           title={this.props.post ? this.props.post.seoTitleTag : "Blog Post | Coding Blog"}
           metaDescription={this.props.post && this.props.post.seoMetaDescription}
         />
+        <GoogleAnalytics />
         <Header />
         <div className="blog-post-container">
           {
